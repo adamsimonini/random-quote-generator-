@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <!-- TWITTER widgets SCRIPT start-->
+      <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));</script>
+  <!-- TWITTER widgets SCRIPT end-->
+
+      <!--JQUERY-->
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src = "C:\Users\Adam's Laptop\Google Drive\Javascript Projects\Random Quote\RandomQuote.js"></script>
+
+      <!--BOOTSTRAP-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="C:\Users\Adam's Laptop\Documents\Developer Tools\font-awesome-4.7.0\font-awesome-4.7.0\css">
+      <link rel="stylesheet" href="C:\Users\Adam's Laptop\Google Drive\Javascript Projects\Random Quote\RandomQuoteCSS.css">
+
+</head>
+
+    <body>
+      <h1 class = "row text-center"> <i class="fa fa-retweet" aria-hidden="true"></i>RANDOM QUOTE GENERATOR </h1>
+     <br>
+      <div class="container-fluid">
+          <div class = "row text-center">
+            <div class = "col-xs-12 message">
+              <p id="quote" class="fantasy-font">Quotes appear here</p>
+              <br>
+              <p id="author">Author's name here</p>
+          </div>
+        </div>
+         <div class="row text-center fa-comment">
+          <br>
+             <button id = "getQuote" class = "getQuote  btn btn-primary">
+               <i class="fa fa-quote-left" aria-hidden="true"></i>
+               Get Quote
+             </button>
+          <br> <br>
+          <buton id="tweetButton" class="btn btn-primary">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          Share
+          </button>
+      </div>
+    </body>
+</html>
